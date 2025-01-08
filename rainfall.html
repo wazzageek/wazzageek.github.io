@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pan Pac Eskdale RainFall</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div>
+    <div>
+        <a href="https://www.farmsense.nz" target="_blank">
+            <img src="https://prodcdn.sporty.co.nz/cms/6064/50531/1448213/d9a3cce0-c883-4d14-a325-f30055bd7caa_539.png?v=20250108200608" style="width:100%">
+        </a>
+    </div>
+    <div>
+        <canvas id="53a28e42-567b-4c67-9716-0a8d1d9882c3"></canvas>
+        <canvas id="24683317-f276-471c-a2ba-2c2ba4dd9890"></canvas>
+        <canvas id="e25c2250-3ede-45dc-a289-b0fd4eb6be32"></canvas>
+    </div>
+</div>
+
+<script>
+    window.addEventListener("load",(function(){axios({method:"get",url:"https://gist.githubusercontent.com/wazzageek/c9793488db810202da0f3cd2b0193eb3/raw/hbmtbc.json"}).then((function(t){t.data.charts&&t.data.charts.forEach((function(t){new Chart(t.canvas,t.config)}))}))}))
+</script>
